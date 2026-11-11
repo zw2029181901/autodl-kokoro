@@ -1,0 +1,90 @@
+{
+  "prior_standalone_http": {
+    "id": "04-kokoro-tts",
+    "name": "Kokoro 配音",
+    "status": "passed",
+    "outputs": [
+      "/tmp/gradio/edd284ffe16648f1ff202b0ed79ae814f844ed8cfc9617daa5bd2f54bd4baa24/20261111-181204-6259c0116045.wav"
+    ],
+    "verification": "Standalone exported environment; Gradio HTTP upload, queue, inference and download",
+    "sample_rate": 24000,
+    "duration_seconds": 4.225,
+    "elapsed_seconds": 14.171,
+    "supplementary_checks": [
+      {
+        "id": "04-kokoro-tts",
+        "name": "Kokoro 配音",
+        "status": "passed",
+        "outputs": [
+          "/tmp/gradio/65960f58946c722998c97d6f171d063ff61c54173f3df992e489d09a6c176ba0/20261111-182709-26f0abb2ea5d.wav"
+        ],
+        "verification": "Standalone exported environment; Gradio HTTP upload, queue, inference and download",
+        "sample_rate": 24000,
+        "duration_seconds": 3.6,
+        "language": "en",
+        "elapsed_seconds": 9.448
+      }
+    ],
+    "slug": "autodl-kokoro",
+    "standalone_directory_bytes": 1268375715,
+    "model_revisions": {
+      "main": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+    },
+    "platform_image_saved": false,
+    "published": false
+  },
+  "system_disk_migration": {
+    "verified_at": "2026-11-12T00:07:29.941034+08:00",
+    "slug": "autodl-kokoro",
+    "status": "passed",
+    "system_disk_app": "/root/autodl-active",
+    "verification": "Copied model file sizes, contained paths, portable symlinks, pip check, offline model validation and existing HTTP6006 title",
+    "pip_check": "No broken requirements found.",
+    "doctor_output": "Project: 04-kokoro-tts\nIMPORT OK gradio 5.49.1\nIMPORT OK torch 2.8.0+cu128\nIMPORT OK kokoro 0.9.4\nIMPORT OK misaki 0.9.4\nIMPORT OK soundfile 0.13.1\nIMPORT OK en_core_web_sm 3.7.1\nTORCH 2.8.0+cu128; CUDA runtime 12.8\nGPU unavailable; CPU mode supported\nMODEL OK main: /root/autodl-active/models/main\nHTTP OK: 8 UI components\nThis check does not prove model generation works. Complete the sample in SMOKE_TEST.md.\n",
+    "copied_model_files": [
+      {
+        "path": "models/main/config.json",
+        "bytes": 2351
+      },
+      {
+        "path": "models/main/README.md",
+        "bytes": 6348
+      },
+      {
+        "path": "models/main/kokoro-v1_0.pth",
+        "bytes": 327212226
+      },
+      {
+        "path": "models/main/deployment-manifest.json",
+        "bytes": 1568
+      },
+      {
+        "path": "models/main/voices/af_heart.pt",
+        "bytes": 523425
+      },
+      {
+        "path": "models/main/voices/zf_xiaobei.pt",
+        "bytes": 523435
+      }
+    ],
+    "lib64_symlink_preserved": true,
+    "disk_usage": "1234059264\t/root/autodl-active",
+    "prior_standalone_http_inference": "passed; not repeated",
+    "new_model_inference_performed": false,
+    "compute_mode": "no GPU; migration checks only",
+    "autostart": "Same launcher verified on U2Net restored image; no additional per-app reboot test",
+    "platform_image_saved": false,
+    "restored_image_verified": false,
+    "published": false
+  },
+  "platform_image_saved": true,
+  "restored_image_verified": false,
+  "published": false,
+  "image_uuid": "image-7765357d0f",
+  "image_name": "autodl-kokoro-20261111",
+  "image_size_gb": 1.86,
+  "review_submitted": true,
+  "review_status": "pending",
+  "review_checked_at": "2026-11-12T00:26:52.2868041+08:00",
+  "community_url": "https://www.autodl.art/i/zw2029181901/autodl-kokoro/Kokoro-TTS"
+}
