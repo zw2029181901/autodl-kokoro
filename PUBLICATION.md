@@ -9,7 +9,7 @@
 | AutoDL.Art账号 | 200211（金鳞） |
 | 介绍 | 文字转中文或美式英文女声，支持调整语速并下载WAV。 |
 | 服务端口 | 6006 |
-| 启动命令 | bash /root/autodl-kokoro/start.sh |
+| 本批导出镜像启动命令 | bash /root/autodl-active/run-service.sh |
 | 模型容量 | 约0.33GB；模型及输出预留2GB，依赖另计 |
 | 上游 | https://github.com/hexgrad/kokoro |
 | 许可 | Apache-2.0（模型及Kokoro）；其他语音前端见THIRD_PARTY.md |
