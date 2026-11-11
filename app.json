@@ -1,0 +1,43 @@
+{
+  "id": "04-kokoro-tts",
+  "slug": "autodl-kokoro",
+  "name": "Kokoro 配音",
+  "description": "文字转中文或美式英文女声，支持调整语速并下载WAV。",
+  "task": "text-to-speech",
+  "requires_gpu": false,
+  "ffmpeg": true,
+  "espeak": true,
+  "imports": [
+    "torch",
+    "kokoro",
+    "misaki",
+    "soundfile",
+    "en_core_web_sm"
+  ],
+  "model_gb": 0.33,
+  "disk_gb": 2,
+  "gpu": "支持CPU或GPU；建议8GB内存起测。语音前端字典另占少量空间。",
+  "license": "Apache-2.0（模型及Kokoro）；其他语音前端见THIRD_PARTY.md",
+  "source": "https://github.com/hexgrad/kokoro",
+  "models": {
+    "main": {
+      "kind": "hf",
+      "required_files": ["config.json","kokoro-v1_0.pth","voices/af_heart.pt","voices/zf_xiaobei.pt"],
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "allow_patterns": [
+        "config.json",
+        "kokoro-v1_0.pth",
+        "voices/af_heart.pt",
+        "voices/zf_xiaobei.pt",
+        "LICENSE*",
+        "README.md"
+      ]
+    }
+  },
+  "torch": true,
+  "account": {
+    "github": "zw2029181901",
+    "autodl_user": "200211"
+  }
+}
